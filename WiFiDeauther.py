@@ -70,7 +70,7 @@ def deauthclient(interface, bssid, client, deauth_count):
 def helpPanel():
     os.system("figlet WiFiDeauther")
     print("------------------------------------------------------------------")
-    print("WiFiDeauther v0.6.3 WiFi Deauth Attack Tool, Slax38")
+    print("\tWiFiDeauther v0.6.3 WiFi Deauth Attack Tool, Slax38")
     print()
     print("Arguments:")
     print("-help, --helpPanel")
