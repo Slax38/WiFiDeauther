@@ -2,7 +2,7 @@
 
 # Author: Slax38
 
-# New Version v0.6.2 --> Design improvement
+# New Version v0.6.3 --> Design improvement
 
 # Version v0.6.2
 
