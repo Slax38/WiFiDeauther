@@ -19,7 +19,7 @@ stop_capture = False
 
 def menu():
    print()
-   print("usage: python3 wifideauther.py -help")
+   print("usage: python3 WiFiDeauther.py -help")
 menu()
 
 
